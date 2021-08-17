@@ -15,7 +15,7 @@ app.use(express.json());
 dbConnection();
 
 /* ------- Morgan middleware -------- */
-// app.use(morgan('dev'));
+app.use(morgan('dev'));
 
 /* ------- Routes -------- */
 const studentRouter = require('./routes/studentRouter');
